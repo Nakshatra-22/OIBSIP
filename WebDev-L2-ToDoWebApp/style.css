@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+h1{
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:25px;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.input-section input{
+    flex:1;
+    padding:12px;
+    font-size:16px;
+    border:2px solid #ccc;
+    border-radius:8px;
+}
+
+.input-section button{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.input-section button:hover{
+    background:#2980b9;
+}
+
+.lists{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.list-box{
+    background:#f9f9f9;
+    padding:20px;
+    border-radius:10px;
+}
+
+.list-box h2{
+    margin-bottom:15px;
+    color:#34495e;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:white;
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+.task-text{
+    font-size:16px;
+    margin-bottom:8px;
+    word-wrap:break-word;
+}
+
+.time{
+    color:gray;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.complete{
+    background:#27ae60;
+    color:white;
+    border:none;
+    padding:7px 12px;
+    border-radius:5px;
+}
+
+.edit{
+    background:#f39c12;
+    color:white;
+    border:none;
+    padding:7px 12px;
+    border-radius:5px;
+}
+
+.delete{
+    background:#e74c3c;
+    color:white;
+    border:none;
+    padding:7px 12px;
+    border-radius:5px;
+}
+
+.pending{
+    background:#27ae60;
+}
+
+.empty{
+    color:gray;
+    text-align:center;
+    margin-top:15px;
+}
+
+input.editInput{
+    width:100%;
+    padding:8px;
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+.lists{
+    grid-template-columns:1fr;
+}
+
+.input-section{
+    flex-direction:column;
+}
+
+.input-section button{
+    width:100%;
+}
+
+}
